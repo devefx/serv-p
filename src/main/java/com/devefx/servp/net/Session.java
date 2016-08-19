@@ -19,4 +19,6 @@ public interface Session {
 	public void write(Object msg);
 	
 	public void flush();
+	
+	public void close();
 }

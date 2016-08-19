@@ -73,4 +73,9 @@ public class TcpSession implements Session {
 	public void flush() {
 		context.channel().flush();
 	}
+	
+	@Override
+	public void close() {
+		context.channel().close();
+	}
 }
